@@ -1,11 +1,13 @@
+const { join } = require("path");
+
 // Desafio 1
 function compareTrue(param1, param2) {
-  if(param1 === true && param2 === true) {
+  if (param1 === true && param2 === true) {
     return true
   } else {
     return false
   };
-  
+
 }
 
 // Desafio 2
@@ -25,8 +27,14 @@ console.log(splitSentence('vamo que vamo'));
 // Desafio 4
 function concatName(array) {
   let resultado = [];
-  resultado.push(array[array.length - 1]) 
+  let resultadoFinal;
+  resultado.push(array[array.length - 1]);
+  resultado.push(array[0]);
+  resultadoFinal = resultado.join(', ');
+  return resultadoFinal
 }
+
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints() {
