@@ -1,3 +1,5 @@
+const { string } = require("yargs");
+
 // Desafio 1
 function compareTrue(param1, param2) {
   if(param1 === true && param2 === true) {
