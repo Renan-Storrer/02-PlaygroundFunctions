@@ -4,7 +4,7 @@ function compareTrue(param1, param2) {
     return true
   } else {
     return false
-  }
+  };
   
 }
 
