@@ -3,17 +3,16 @@ const { join } = require("path");
 // Desafio 1
 function compareTrue(param1, param2) {
   if (param1 === true && param2 === true) {
-    return true
+    return true;
   } else {
-    return false
-  };
-
+    return false;
+  }
 }
 
 // Desafio 2
 function calcArea(base, height) {
-  let resultado = (base * height) / 2
-  return resultado
+  let resultado = (base * height) / 2;
+  return resultado;
 }
 
 // Desafio 3
@@ -31,7 +30,7 @@ function concatName(array) {
   resultado.push(array[array.length - 1]);
   resultado.push(array[0]);
   resultadoFinal = resultado.join(', ');
-  return resultadoFinal
+  return resultadoFinal;
 }
 
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
@@ -44,7 +43,7 @@ function footballPoints(wins, ties) {
   tiesPoints = ties * 1;
   let points = winsPoints + tiesPoints;
 
-  return points
+  return points;
 }
 
 console.log(footballPoints());
