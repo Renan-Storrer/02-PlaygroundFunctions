@@ -92,7 +92,7 @@ function fizzBuzz(numerosFizzBuzz) {
   let resultadoFizzBuzz = [];
   for (let index in numerosFizzBuzz) {
     if (numerosFizzBuzz[index] % 3 === 0 && numerosFizzBuzz[index] % 5 !== 0) {
-     resultadoFizzBuzz.push('fizz')
+      resultadoFizzBuzz.push('fizz')
     } else if (numerosFizzBuzz[index] % 5 === 0 && numerosFizzBuzz[index] % 3 !== 0) {
       resultadoFizzBuzz.push('buzz')
     } else if (numerosFizzBuzz[index] % 3 === 0 && numerosFizzBuzz[index] % 5 === 0) {
@@ -110,7 +110,7 @@ function encode(stringEncode) {
   let stringInArray = stringEncode.split('');
   let arrayEncode = [];
   for (let index in stringInArray) {
-    if(stringInArray[index] === 'a') {
+    if (stringInArray[index] === 'a') {
       arrayEncode.push('1')
     } else if (stringInArray[index] === 'e') {
       arrayEncode.push('2')
@@ -134,7 +134,7 @@ function decode(stringDecode) {
   let stringInArray2 = stringDecode.split('');
   let arrayDecode = [];
   for (let index in stringDecode) {
-    if(stringInArray2[index] === '1') {
+    if (stringInArray2[index] === '1') {
       arrayDecode.push('a')
     } else if (stringInArray2[index] === '2') {
       arrayDecode.push('e')
@@ -156,8 +156,8 @@ console.log(decode('h3 th2r2!'));
 // Desafio 10
 function techList(tech, name) {
   let resultadoTechList = [];
-  for(let index in tech) {
-    resultadoTechList.push( {
+  for (let index in tech) {
+    resultadoTechList.push({
       tech: tech[index],
       name: name
     }
