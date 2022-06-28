@@ -87,10 +87,24 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 console.log(catAndMouse(0, 2, 1));
+
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numerosFizzBuzz) {
+  let resultadoFizzBuzz = [];
+  for (let index in numerosFizzBuzz) {
+    if (numerosFizzBuzz[index] % 3  === 0 && numerosFizzBuzz[index] % 5 !== 0) {
+      resultadoFizzBuzz.push('fizz')
+    } else if (numerosFizzBuzz[index] % 5 === 0 && numerosFizzBuzz[index] % 3 !== 0) {
+      resultadoFizzBuzz.push('buzz')
+    } else if (numerosFizzBuzz[index] % 3 === 0 && numerosFizzBuzz[index] % 5 ===0) {
+      resultadoFizzBuzz.push('fizzBuzz')
+    } else {
+      resultadoFizzBuzz.push('bug!')
+    }
+  }
+  return resultadoFizzBuzz
 }
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
 // Desafio 9
 function encode() {
