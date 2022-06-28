@@ -151,12 +151,21 @@ function decode(stringDecode) {
   let resultadoDecode = arrayDecode.join('');
   return resultadoDecode
 }
-console.log(decode('h3 th2r2!'))
+console.log(decode('h3 th2r2!'));
 
 // Desafio 10
-function techList() {
-  
+function techList(tech, name) {
+  let resultadoTechList = [];
+  for(let index in tech) {
+    resultadoTechList.push( {
+      tech: tech[index],
+      name: name
+    }
+    )
+    return resultadoTechList;
+  }
 }
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 module.exports = {
   calcArea,
