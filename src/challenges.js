@@ -149,7 +149,7 @@ function decode(stringDecode) {
     }
   }
   let resultadoDecode = arrayDecode.join('');
-  return resultadoDecode
+  return resultadoDecode;
 }
 console.log(decode('h3 th2r2!'));
 
