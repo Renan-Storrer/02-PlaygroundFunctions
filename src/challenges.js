@@ -67,8 +67,8 @@ highestCount([90, 150, 2000, 3, 9, 5, 7]);
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let distanceCat1 = cat1 - mouse
-  let distanceCat2 = cat2 - mouse;
+  let distanceCat1 = Math.abs (cat1 - mouse);
+  let distanceCat2 = Math.abs (cat2 - mouse);
   let gatoMaisPerto = '';
   if (distanceCat1 < distanceCat2) {
     gatoMaisPerto = 'cat1';
@@ -80,7 +80,7 @@ function catAndMouse(mouse, cat1, cat2) {
   return gatoMaisPerto
 }
 
-console.log(catAndMouse(0, 2, 1));
+console.log(catAndMouse(6, 0, 12));
 
 // Desafio 8
 function fizzBuzz(numerosFizzBuzz) {
