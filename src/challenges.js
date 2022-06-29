@@ -80,7 +80,7 @@ function catAndMouse(mouse, cat1, cat2) {
   return gatoMaisPerto
 }
 
-console.log(catAndMouse(6, 0, 12));
+catAndMouse();
 
 // Desafio 8
 function fizzBuzz(numerosFizzBuzz) {
