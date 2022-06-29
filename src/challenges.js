@@ -96,7 +96,7 @@ function fizzBuzz(numerosFizzBuzz) {
       resultadoFizzBuzz.push('bug!')
     }
   }
-  return resultadoFizzBuzz
+  return resultadoFizzBuzz;
 }
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
 
