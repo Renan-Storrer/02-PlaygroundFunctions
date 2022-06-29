@@ -21,8 +21,9 @@ function generatePhoneNumber(numberPhone) {
   console.log(mensagemFinal);
 }
 generatePhoneNumber([4, 1, 9, 9, 5, 8, 4, 3, 2, 1, 2, ]);
+
 // Desafio 12
-function triangleCheck()  {
+function triangleCheck(lineA, lineB, lineC)  {
   // seu código aqui
 }
 
