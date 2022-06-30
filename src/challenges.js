@@ -157,12 +157,14 @@ console.log(decode('h3 th2r2!'));
 function techList(tech, name) {
   let arrayTech = [];
   for (let index = 0; index < tech.length; index += 1) {
-    arrayTech.push({ tech: tech[index] })
-    arrayTech.push({name: name})
+    arrayTech.push({ tech: tech[index], name: name })
   }
-  console.log(arrayTech);
+  if (tech.length === 0){
+    arrayTech = 'Vazio!'
+  }
+  return arrayTech
 }
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Renan'));
 
 module.exports = {
   calcArea,
