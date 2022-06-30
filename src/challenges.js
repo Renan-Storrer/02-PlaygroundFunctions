@@ -155,14 +155,14 @@ console.log(decode('h3 th2r2!'));
 
 // Desafio 10
 function techList(tech, name) {
-  let arrayTech = [];
+  let arrayTechList = [];
   for (let index = 0; index < tech.length; index += 1) {
-    arrayTech.push({ tech: tech[index], name: name })
+    arrayTechList.push({ tech: tech[index], name: name })
   }
   if (tech.length === 0){
-    arrayTech = 'Vazio!'
+    arrayTechList = 'Vazio!'
   }
-  return arrayTech
+  return arrayTechList
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Renan'));
 
