@@ -50,7 +50,7 @@ console.log(footballPoints());
 
 // Desafio 6
 function highestCount(arrayDeNumeros) {
-  let maiorNumero = (-10);
+  let maiorNumero = (-100000);
   let contagem = 0;
   for (let index = 0; index < arrayDeNumeros.length; index += 1) {
     let numeroIndex = arrayDeNumeros[index]
