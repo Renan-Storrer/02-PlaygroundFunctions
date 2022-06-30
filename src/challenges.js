@@ -60,8 +60,8 @@ function highestCount(arrayDeNumeros) {
   }
   // console.log(maiorNumero);
   for (let index2 = 0; index2 < arrayDeNumeros.length; index2 += 1) {
-    let numeroIndex2 =  arrayDeNumeros[index2]
-    if (numeroIndex2 === maiorNumero){
+    let numeroIndex2 = arrayDeNumeros[index2]
+    if (numeroIndex2 === maiorNumero) {
       contagem = contagem + 1
     }
   }
@@ -155,15 +155,12 @@ console.log(decode('h3 th2r2!'));
 
 // Desafio 10
 function techList(tech, name) {
-  let resultadoTechList = [];
-  for (let index in tech) {
-    resultadoTechList.push({
-      tech: tech[index],
-      name: name
-    }
-    )
-    return resultadoTechList;
+  let arrayTech = [];
+  for (let index = 0; index < tech.length; index += 1) {
+    arrayTech.push({ tech: tech[index] })
+    arrayTech.push({name: name})
   }
+  console.log(arrayTech);
 }
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
