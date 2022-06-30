@@ -50,25 +50,34 @@ console.log(footballPoints());
 
 // Desafio 6
 function highestCount(arrayDeNumeros) {
-  let maiorNumero = 0;
-  for (let index = 0; index <= arrayDeNumeros.length; index += 1) {
-    let numeroVerificado = arrayDeNumeros[index]
-    for (let index2 = 0; index2 < arrayDeNumeros.length; index2 += 1) {
-      let numerosVerificado2 = arrayDeNumeros[index2]
-      if (numerosVerificado2 > numeroVerificado) {
-        maiorNumero = numerosVerificado2
-      }
+  let maiorNumero = (-10);
+  let contagem = 0;
+  for (let index = 0; index < arrayDeNumeros.length; index += 1) {
+    let numeroIndex = arrayDeNumeros[index]
+    if (numeroIndex > maiorNumero) {
+      maiorNumero = numeroIndex
     }
   }
-  console.log(maiorNumero);
+  // console.log(maiorNumero);
+  for (let index2 = 0; index2 < arrayDeNumeros.length; index2 += 1) {
+    let numeroIndex2 =  arrayDeNumeros[index2]
+    if (numeroIndex2 === maiorNumero){
+      contagem = contagem + 1
+    }
+  }
+  return contagem
+  // console.log(contagem);
 }
 
-highestCount([90, 150, 2000, 3, 9, 5, 7]);
+highestCount([]);
+// let exemplo = [90000, 150, 2000, 3, 9, 5, 7]
+// let exemploMaior = Math.max.apply(null, exemplo)
+// console.log(exemploMaior);
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  let distanceCat1 = Math.abs (cat1 - mouse);
-  let distanceCat2 = Math.abs (cat2 - mouse);
+  let distanceCat1 = Math.abs(cat1 - mouse);
+  let distanceCat2 = Math.abs(cat2 - mouse);
   let gatoMaisPerto = '';
   if (distanceCat1 < distanceCat2) {
     gatoMaisPerto = 'cat1';
