@@ -66,13 +66,9 @@ function highestCount(arrayDeNumeros) {
     }
   }
   return contagem
-  // console.log(contagem);
 }
 
 highestCount([]);
-// let exemplo = [90000, 150, 2000, 3, 9, 5, 7]
-// let exemploMaior = Math.max.apply(null, exemplo)
-// console.log(exemploMaior);
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
