@@ -156,7 +156,7 @@ console.log(decode('h3 th2r2!'));
 // Desafio 10
 function techList(tech, name) {
   let arrayTechList = [];
-  tech = tech.sort()
+  tech = tech.sort();
   for (let index = 0; index < tech.length; index += 1) {
     arrayTechList.push({ tech: tech[index], name: name })
   }
