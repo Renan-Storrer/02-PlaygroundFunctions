@@ -18,7 +18,8 @@ function generatePhoneNumber(numberPhone) {
   } else  if (numeroFinal.length != 15) {
     mensagemFinal = 'Array com tamanho incorreto.' 
   }
-  console.log(mensagemFinal);
+  // console.log(mensagemFinal);
+  return mensagemFinal
 }
 generatePhoneNumber([4, 1, 9, 9, 5, 8, 4, 3, 2, 1, 2, ]);
 
