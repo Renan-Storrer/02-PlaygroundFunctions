@@ -39,6 +39,7 @@ function triangleCheck(lineA, lineB, lineC) {
   }
 }
 
+
 function hydrate() {
   // seu código aqui
 }
